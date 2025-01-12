@@ -12,12 +12,6 @@ function rgbToHex(r: number, g: number, b: number): string {
   }).join('')
 }
 
-// 检查颜色是否接近白色
-function isNearWhite(r: number, g: number, b: number): boolean {
-  const threshold = 230 // 阈值，可以调整
-  return r > threshold && g > threshold && b > threshold
-}
-
 // 调整颜色亮度和饱和度，使其更有艺术感
 function adjustColor(r: number, g: number, b: number): { r: number, g: number, b: number } {
   // 计算亮度

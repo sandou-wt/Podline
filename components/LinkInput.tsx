@@ -1,7 +1,5 @@
 'use client'
 
-import { use, useState } from 'react'
-
 interface LinkInputProps {
   onSubmit: (link: string) => void
 }
