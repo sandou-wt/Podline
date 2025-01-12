@@ -122,12 +122,22 @@ export default function PodcastCard({ podcastData, userText }: PodcastCardProps)
               style={{ userSelect: 'none' }}
             >"</div>
             
-            {/* 文本内容 - 调整间距和布局 */}
+            {/* 文本内容 - 优化字体样式 */}
             <div 
-              className="relative text-xl leading-relaxed text-white font-medium whitespace-pre-wrap py-10"
+              className="relative text-xl text-white whitespace-pre-wrap py-6"
               style={{
                 maxWidth: '100%',
-                wordBreak: 'break-word'
+                wordBreak: 'break-word',
+                fontFamily: '-apple-system-ui-serif, "Songti SC", STSong, "Noto Serif CJK SC", serif',
+                lineHeight: '1.85',
+                letterSpacing: '0.02em',
+                fontWeight: '500',
+                fontOpticalSizing: 'auto',
+                textShadow: '0 2px 4px rgba(0,0,0,0.12)',
+                WebkitFontSmoothing: 'antialiased',
+                MozOsxFontSmoothing: 'grayscale',
+                fontFeatureSettings: '"palt"',
+                textRendering: 'optimizeLegibility',
               }}
             >
               {userText || "请在下方输入要显示的文字"}
