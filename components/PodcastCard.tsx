@@ -120,7 +120,9 @@ export default function PodcastCard({ podcastData, userText }: PodcastCardProps)
             <div 
               className="absolute -top-4 left-0 text-6xl leading-none opacity-20 text-white select-none pointer-events-none"
               style={{ userSelect: 'none' }}
-            >"</div>
+            >
+              &ldquo;
+            </div>
             
             {/* 文本内容 - 优化字体样式 */}
             <div 
